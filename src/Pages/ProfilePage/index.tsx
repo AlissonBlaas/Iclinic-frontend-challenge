@@ -101,11 +101,12 @@ const HomePage: React.FC = () => {
         {isSmall && (
           <Button
             textColor={lukeName ? '#FBFE63' : '#2B2B2B'}
-            width={347}
+            width="auto"
             background={lukeName ? '#2A2A2A' : '#fff'}
             title="choose your path again, Padawan"
             onClick={goToProfile}
             disabled={isLoading}
+            sx={{ maxWidth: 347 }}
           />
         )}
       </Box>
