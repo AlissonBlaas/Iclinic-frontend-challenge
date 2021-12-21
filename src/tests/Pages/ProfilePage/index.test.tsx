@@ -8,7 +8,7 @@ import ProfilePage from '../../../Pages/ProfilePage';
 jest.mock('react-router-dom', () => {
   const mockedUsedNavigate = jest.fn();
   return {
-    ...(jest.requireActual('react-router-dom') as any),
+    ...jest.requireActual('react-router-dom'),
     useNavigate: () => mockedUsedNavigate,
   };
 });
@@ -46,7 +46,7 @@ describe('ProfilePage', () => {
     expect(nativateMocked).toHaveBeenLastCalledWith('/');
   });
 
-  it('data is fetched', async () => {
+  it('get user name', async () => {
     const { user } = useUser();
 
     expect(user?.name).toStrictEqual(undefined);

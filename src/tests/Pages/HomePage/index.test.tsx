@@ -8,7 +8,7 @@ import HomePage from '../../../Pages/HomePage';
 jest.mock('react-router-dom', () => {
   const mockedUsedNavigate = jest.fn();
   return {
-    ...(jest.requireActual('react-router-dom') as any),
+    ...jest.requireActual('react-router-dom'),
     useNavigate: () => mockedUsedNavigate,
   };
 });
