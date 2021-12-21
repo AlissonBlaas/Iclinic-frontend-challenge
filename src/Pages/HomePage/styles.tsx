@@ -7,7 +7,7 @@ const useStyles = makeStyles({
     height: '60vh',
   },
   subtitle: {
-    latterSpacing: '0.35em',
+    letterSpacing: '0.35em',
   },
   companyName: {
     fontWeight: 'bold',
