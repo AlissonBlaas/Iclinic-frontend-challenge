@@ -32,3 +32,4 @@ https://mui.com/pt/
 - eslint
 - prettier
 - react hooks
+- axios
