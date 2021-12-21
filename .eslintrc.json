@@ -31,6 +31,7 @@
     "react/jsx-no-constructed-context-values": "off",
     "linebreak-style": "off",
 		"react-hooks/rules-of-hooks": "error",
+    "typescript-eslint/no-explicit-any": "off",
 	    "react-hooks/exhaustive-deps": "warn",
       "react/function-component-definition": [
         2,

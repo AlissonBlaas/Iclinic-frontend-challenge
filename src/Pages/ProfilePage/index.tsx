@@ -9,8 +9,6 @@ import {
   useMediaQuery,
   Skeleton,
 } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
-
 import { useUser } from '../../hooks/user';
 
 import Button from '../../components/Button';
@@ -23,7 +21,6 @@ import Luke from '../../assets/images/luke-skywalker.png';
 import useStyles from './styles';
 
 const HomePage: React.FC = () => {
-  const theme = useTheme();
   const { fetchUserInfo, user, isLoading } = useUser();
   const history = useNavigate();
   const isSmall = useMediaQuery('(max-width: 800px)');
