@@ -26,9 +26,9 @@ Your app is ready to be deployed!
 MaterialUI:
 https://mui.com/pt/
 
-react router dom
-jest
-mock
-eslint
-prettier
-react hooks
+- react router dom
+- jest
+- mock
+- eslint
+- prettier
+- react hooks
